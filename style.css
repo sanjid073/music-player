@@ -1,0 +1,106 @@
+
+body{
+    background-color: #242432;
+}
+section{
+    background-color: #242432;
+    color: white;
+    height: 100vh;
+}
+ol{
+    list-style: none;
+}
+.player-wr {
+    border: 3px solid #333341;
+    padding: 70px;
+    margin-top: 32px;
+    border-radius: 34px;
+    width: 625px;
+}
+.controls progress {
+    width: 100%;
+}
+.control-wrapper span {
+    font-size: 72px;
+    padding: 17px;
+}
+.control-wrapper span:hover{
+      cursor: pointer;
+      color: #ED2833;
+}
+.volume span{
+    font-size: 29px;
+    cursor: pointer;
+}
+#volumeSlider {
+    width: 285px;
+    height: 17px;
+}
+.my-music-wr {
+    width: 625px;
+    margin: 5% auto;
+    background-color: #434351;
+    border-radius: 34px;
+}
+.my-music-wr h2 {
+    padding-top: 30px;
+    margin-bottom: -15px;
+}
+.song-list {
+    padding: 64px;
+}
+.song-list ol {
+    border: 1px solid #242432;
+    border-radius: 34px;
+    padding: 0 50px;
+}
+.song-list ol li {
+    font-size: 22px;
+    padding: 10px;
+}
+.song-list ol li:hover {
+    background-color: #ED2833;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+.spin{
+    animation: spin;
+    animation-duration: 0.3s;
+    animation-iteration-count:infinite;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+
+    }
+    10%{
+        transform: rotate(60deg);
+    }
+    50% {
+        transform: rotate(180deg);
+
+    }
+    90%{
+        transform: rotate(300deg);
+    }
+    to{
+        transform: rotate(360deg);
+        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .controls progress {
+        width: 70%;
+    }
+    .player-wr {
+        border: 3px solid #333341;
+        padding:50px 0px;
+        margin: auto;
+        width: 151%;
+        
+    }
+  }
